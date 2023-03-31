@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "@babel/polyfill": "^7.12.1",
-    "three": "^0.150.1"
+    "@babel/polyfill": "^7.12.1"
   }
 }

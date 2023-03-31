@@ -1,4 +1,4 @@
-import { GLTFLoader } from 'GLTFLoader';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 import { setupModel } from './setupModel.js';
 import { setupModels } from './setupModel.js';
@@ -11,7 +11,7 @@ async function loadModel() {
         loader.loadAsync('Parrot.glb'),
     ]);
 
-    console.log('glb data', modelData);
+    //  console.log('glb data', modelData);
 
     const model = setupModel(modelData[0]);
     model.position.set(0, 8, 0);

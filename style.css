@@ -19,16 +19,61 @@ html {
   font-family: 'Quicksand', sans-serif;
 }
 
+.block-container {
+  display: flex;
+  align-items: center;
+}
+
 .gallery_block {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  text-decoration: none;
 }
 
 .block_image {
   background-size: cover;
+  background-position: center center;
   object-fit: cover;
   width: 100%;
-  height: 30vh;
+  height: 40vh;
+}
+
+.introduction {
+  position: absolute;
+  width: 80%;
+  height: auto;
+  top: 50%;
+  right: 10%;
+  z-index: 100;
+  color: aliceblue;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.hovtxt {
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  opacity: 0;
+
+  padding-top: 5em;
+  /* top: 50%;
+  transform: translateY(-50%); */
+}
+
+.hovtxt:hover {
+  opacity: 0.8;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 
 /* canvas {

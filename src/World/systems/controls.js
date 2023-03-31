@@ -1,4 +1,4 @@
-import { OrbitControls } from 'OrbitControls';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 function createControls(camera, canvas) {
   const controls = new OrbitControls(camera, canvas);
